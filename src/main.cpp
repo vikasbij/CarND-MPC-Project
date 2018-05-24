@@ -120,10 +120,10 @@ int main() {
           auto coeffs = polyfit (ptsx_transform, ptsy_transform, 3);
           
            //calculate the cross track error.
-          //double cte = polyeval (coeffs , 0);
+          double cte = polyeval (coeffs , 0);
       
           //calculate the orientation error
-          //double epsi = - atan(coeffs[1]);        
+          double epsi = - atan(coeffs[1]);        
           //cout << "check 5";  
           /* Both are in between [-1, 1].
           *
